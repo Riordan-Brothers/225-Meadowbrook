@@ -1,0 +1,234 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name:	Crestron Electronics
+System Name:
+System Number:
+Programmer:		PAC
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+// #ENABLE_DYNAMIC
+#SYMBOL_NAME "DSC PowerSeries System Status v1.0"
+// #HINT ""
+#DEFINE_CONSTANT	ciSYSTEMERROR		502
+#DEFINE_CONSTANT	ciFKEYALARM			621
+#DEFINE_CONSTANT	ciFKEYRESTORE		622
+#DEFINE_CONSTANT	ciAKEYALARM			623
+#DEFINE_CONSTANT	ciAKEYRESTORE		624
+#DEFINE_CONSTANT	ciPKEYALARM			625
+#DEFINE_CONSTANT	ciPKEYRESTORE		626
+#DEFINE_CONSTANT	ciAUXINALARM		631
+#DEFINE_CONSTANT	ciAUXINRESTORE	632
+#DEFINE_CONSTANT	ciPNLBATALARM		800
+#DEFINE_CONSTANT	ciPNLBATRESTORE	801
+#DEFINE_CONSTANT	ciPNLACALARM		802
+#DEFINE_CONSTANT	ciPNLACRESTORE	803
+#DEFINE_CONSTANT	ciSYSBELLTRBL		806
+#DEFINE_CONSTANT	ciSYSBELLRSTR		807
+#DEFINE_CONSTANT	ciTLM1TROUBLE		810
+#DEFINE_CONSTANT	ciTLM1RESTORE		811
+#DEFINE_CONSTANT	ciTLM2TROUBLE		812
+#DEFINE_CONSTANT	ciTLM2RESTORE		813
+#DEFINE_CONSTANT	ciWRLSKEYTRBL		821
+#DEFINE_CONSTANT	ciWRLSKEYRSTR		822
+#DEFINE_CONSTANT	ciHANDKEYTRBL		827
+#DEFINE_CONSTANT	ciHANDKEYRSTR		828
+#DEFINE_CONSTANT	ciSYSTMPRTRBL		829
+#DEFINE_CONSTANT	ciSYSTMPRRSTR		830
+#DEFINE_CONSTANT	ciFIRETRBLALM		842
+#DEFINE_CONSTANT	ciFIRETRBLRSTR	843
+// #CATEGORY "" 
+#DEFAULT_VOLATILE
+// #PRINT_TO_TRACE
+// #DIGITAL_EXPAND 
+// #ANALOG_SERIAL_EXPAND 
+// #OUTPUT_SHIFT 
+// #HELP_PDF_FILE ""
+// #DEFAULT_NONVOLATILE
+// #ENABLE_STACK_CHECKING
+// #ENABLE_TRACE
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+BUFFER_INPUT	From_Queue[2000];
+
+DIGITAL_OUTPUT	F_Key_Alarm, A_Key_Alarm, P_Key_Alarm, Aux_Input_Alarm, Panel_Battery_Trouble,
+								Panel_AC_Trouble, System_Bell_Trouble, TLM_Line_1_Trouble, TLM_Line_2_Trouble,
+								System_Tamper_Trouble, Fire_Alarm_Trouble;
+ANALOG_OUTPUT	Error_Number;
+DIGITAL_OUTPUT	Wireless_Key_Low_Battery_Trouble[16], Handheld_Keypad_Low_Battery_Trouble[4];
+/*******************************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+*******************************************************************************************/
+INTEGER	iTemp, iFlag1, iTemp1;
+STRING	sTemp[250];
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+CHANGE From_Queue
+{
+	if(iFlag1 = 0)
+	{
+		iFlag1 = 1;
+		while(find("\x0D\x0A", From_Queue) > 0)
+		{
+			sTemp = remove("\x0D\x0A", From_Queue);
+			iTemp = atoi(mid(sTemp, 1, 3));
+			switch(iTemp)
+			{
+				case(ciSYSTEMERROR):
+				{
+					Error_Number = atoi(mid(sTemp, 4, 3));
+				}
+				case(ciFKEYALARM):
+				{
+					F_Key_Alarm = 1;
+				}
+				case(ciFKEYRESTORE):
+				{
+					F_Key_Alarm = 0;
+				}
+				case(ciAKEYALARM):
+				{
+					A_Key_Alarm = 1;
+				}
+				case(ciAKEYRESTORE):
+				{
+					A_Key_Alarm = 0;
+				}
+				case(ciPKEYALARM):
+				{
+					P_Key_Alarm = 1;
+				}
+				case(ciPKEYRESTORE):
+				{
+					P_Key_Alarm = 0;
+				}
+				case(ciAUXINALARM):
+				{
+					Aux_Input_Alarm = 1;
+				}
+				case(ciAUXINRESTORE):
+				{
+					Aux_Input_Alarm = 0;
+				}
+				case(ciPNLBATALARM):
+				{
+					Panel_Battery_Trouble = 1;
+				}
+				case(ciPNLBATRESTORE):
+				{
+					Panel_Battery_Trouble = 0;
+				}
+				case(ciPNLACALARM):
+				{
+					Panel_AC_Trouble = 1;
+				}
+				case(ciPNLACRESTORE):
+				{
+					Panel_AC_Trouble = 0;
+				}
+				case(ciSYSBELLTRBL):
+				{
+					System_Bell_Trouble = 1;
+				}
+				case(ciSYSBELLRSTR):
+				{
+					System_Bell_Trouble = 0;
+				}
+				case(ciTLM1TROUBLE):
+				{
+					TLM_Line_1_Trouble = 1;
+				}
+				case(ciTLM1RESTORE):
+				{
+					TLM_Line_1_Trouble = 0;
+				}
+				case(ciTLM2TROUBLE):
+				{
+					TLM_Line_2_Trouble = 1;
+				}
+				case(ciTLM2RESTORE):
+				{
+					TLM_Line_2_Trouble = 0;
+				}
+				case(ciWRLSKEYTRBL):
+				{
+					iTemp1 = atoi(mid(sTemp, 4, 3));
+					if((iTemp >= 1) && (iTemp1 <= 16))
+					{
+						Wireless_Key_Low_Battery_Trouble[iTemp] = 1;
+					}
+				}
+				case(ciWRLSKEYRSTR):
+				{
+					iTemp1 = atoi(mid(sTemp, 4, 3));
+					if((iTemp >= 1) && (iTemp1 <= 16))
+					{
+						Wireless_Key_Low_Battery_Trouble[iTemp] = 0;
+					}
+				}
+				case(ciHANDKEYTRBL):
+				{
+					iTemp1 = atoi(mid(sTemp, 4, 3));
+					if((iTemp >= 1) && (iTemp1 <= 16))
+					{
+						Handheld_Keypad_Low_Battery_Trouble[iTemp] = 1;
+					}
+				}
+				case(ciHANDKEYRSTR):
+				{
+					iTemp1 = atoi(mid(sTemp, 4, 3));
+					if((iTemp >= 1) && (iTemp1 <= 16))
+					{
+						Handheld_Keypad_Low_Battery_Trouble[iTemp] = 0;
+					}
+				}
+				case(ciSYSTMPRTRBL):
+				{
+					System_Tamper_Trouble = 1;
+				}
+				case(ciSYSTMPRRSTR):
+				{
+					System_Tamper_Trouble = 0;
+				}
+				case(ciFIRETRBLALM):
+				{
+					Fire_Alarm_Trouble = 1;
+				}
+				case(ciFIRETRBLRSTR):
+				{
+					Fire_Alarm_Trouble = 0;
+				}
+			}
+			sTemp = "";
+		}
+		iFlag1 = 0;
+	}
+}
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+Function Main()
+{
+	iFlag1 = 0;
+}

@@ -1,0 +1,43 @@
+Crosspoint listing for C:\github\225-Meadowbrook\SIMPL\Lighting\225 Meadowbrook Lighting v1.0.2.SMW
+
+Note:  Crosspoint symbols with EquipID or ControlID set to 0d are not routeable.
+
+Equipment Crosspoint Routing.                                                                       EquipID
+===========================================================================================================
+S-4.1.1                                                                                             257
+S-4.2.1                                                                                             258
+S-4.3.1                                                                                             259
+S-4.4.1                                                                                             260
+S-4.5.1                                                                                             261
+S-4.6.1                                                                                             262
+S-4.7.1                                                                                             263
+S-4.8.1                                                                                             264
+S-4.9.1                                                                                             265
+S-4.10.1                                                                                            272
+S-4.11.1                                                                                            273
+S-4.12.1                                                                                            274
+S-4.13.1                                                                                            275
+S-4.14.1                                                                                            276
+S-4.15.1                                                                                            277
+S-4.16.1                                                                                            278
+S-4.17.1                                                                                            279
+S-4.18.1                                                                                            280
+S-4.19.1                                                                                            281
+S-4.20.1                                                                                            288
+S-4.21.1                                                                                            289
+S-4.22.1                                                                                            290
+S-4.23.1                                                                                            291
+S-4.24.1                                                                                            292
+S-4.25.1                                                                                            293
+
+Control Crosspoint Routing.                                                                         ControlID
+=============================================================================================================
+S-3.4.11.1                                                                                          80
+S-3.5.4.1                                                                                           81
+S-3.6.4.1                                                                                           82
+S-3.7.4.1                                                                                           83
+S-2.1 in macro S-3.4.12.1 (Module File C:\github\225-Meadowbrook\SIMPL\Lighting\RBI PC Con          336
+trol v6.umc)                                                                                        
+S-1 in macro S-3.4.13.1 (Module File C:\github\225-Meadowbrook\SIMPL\Lighting\RBI Color Pi          592
+cker Helper Panel v1.umc)                                                                           
+

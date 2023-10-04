@@ -1,0 +1,31 @@
+/*
+Dealer Name: Riordan Brothers
+Programmer: Hope Roth
+Comments:
+*/
+
+
+	#SYMBOL_NAME "RBI HTML Formatting Helper v1"
+	#CATEGORY "10" 
+
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENABLE_TRACE
+
+STRING_INPUT Label[24][50];
+STRING_OUTPUT FormattedLabel[24];
+STRING_PARAMETER _Skip_, Size[5], Face[50], Color[10];
+
+
+
+
+threadsafe change Label {
+
+
+	FormattedLabel[GetLastModifiedArrayIndex()] = "<FONT size= \x22" + Size + "\x22 face=\x22" + Face + "\x22 color=\x22#" + Color + "\x22>" + Label[GetLastModifiedArrayIndex()] + "</FONT>"; 
+
+} 
+
+
+
+

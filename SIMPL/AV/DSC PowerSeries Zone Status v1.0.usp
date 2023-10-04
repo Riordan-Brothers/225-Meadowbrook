@@ -1,0 +1,89 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name:	Crestron Electronics
+System Name:
+System Number:
+Programmer:		PAC
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+// #ENABLE_DYNAMIC
+#SYMBOL_NAME "DSC PowerSeries Zones Status v1.0"
+// #HINT ""
+#DEFINE_CONSTANT	ciMAXZONES	64
+// #CATEGORY "" 
+#DEFAULT_VOLATILE
+// #PRINT_TO_TRACE
+// #DIGITAL_EXPAND 
+// #ANALOG_SERIAL_EXPAND 
+// #OUTPUT_SHIFT 
+// #HELP_PDF_FILE ""
+// #DEFAULT_NONVOLATILE
+// #ENABLE_STACK_CHECKING
+// #ENABLE_TRACE
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+BUFFER_INPUT	From_Queue[2000];
+
+ANALOG_OUTPUT	Zone_Status[ciMAXZONES];
+/*******************************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+*******************************************************************************************/
+INTEGER	iTempZone, iFlag1, iTemp;
+STRING	sTemp[250];
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+CHANGE From_Queue
+{
+	if(iFlag1 = 0)
+	{
+		iFlag1 = 1;
+		while(find("\x0D\x0A", From_Queue) > 0)
+		{
+			sTemp = remove("\x0D\x0A", From_Queue);
+			iTemp = atoi(left(sTemp, 3));
+			if((iTemp >= 601) && (iTemp <= 604))
+			{
+				iTempZone = atoi(mid(sTemp, 5, 3));
+			}
+			else
+			{
+				iTempZone = atoi(mid(sTemp, 4, 3));
+			}
+			if((iTempZone >= 1) && (iTempZone <= ciMAXZONES))
+			{
+				Zone_Status[iTempZone] = atoi(left(sTemp, 3));
+			}
+			sTemp = "";
+		}
+		iFlag1 = 0;
+	}
+}
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+Function Main()
+{
+	iFlag1 = 0;
+}

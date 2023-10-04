@@ -1,0 +1,170 @@
+/*******************************************************************************
+ * Apple TV Companion Link Client SIMPL+ Module
+ * Copyright (c) 2021 Ultamation Limited
+ *
+ * Ultamation Limited
+ * E: info@ultamation.com
+ * W: www.ultamation.com
+ *
+ * Module Summary:
+ * 
+ * Author:	Oliver Hall
+ * Date:	15 November 2022
+ * Info:	For interface details, please read the embedded help file
+ *			See #HELP_BEGIN <-> #HELP_END
+ *
+ ******************************************************************************/
+
+/*******************************************************************************
+ * COMPILER DIRECTIVES
+ ******************************************************************************/
+// ENABLE DYNAMIC
+#SYMBOL_NAME "Apple TV Client (Ultamation) v3.04"
+#HELP_PDF_FILE "Ultamation.SimplSharp.CompanionLinkClient.pdf"
+#HINT "IP control of AppleTVs 4th & 5th generation via Companion Protocol"
+#DEFINE_CONSTANT		ATV_NAME_LEN					64
+#DEFINE_CONSTANT		ATV_MAX_APPS					100
+#DEFINE_CONSTANT		ATV_APP_NAME_LEN				100
+#CATEGORY "8" // Media Resource
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+
+#HELP_BEGIN
+AppleTV Companion Link Remote SIMPL+ Wrapper
+
+Copyright:
+This module is the copyright of Ultamation Ltd and
+may not be used without the an appropriate licence
+issued by Ultamation Ltd.
+
+Summary:
+Please refer to the datasheet for detailed integration and usage.
+
+This module does not rely on, or share player usage data with, any external service.
+
+Note:
+3 and 4-Series ONLY - this module is entirely (apart from this basic wrapper) SIMPL#
+Apple may change the API and authentication mechanisms at any time.  Ultamation do not provide any warranty
+should Apple make changes which cause this module to stop functioning.
+#HELP_END
+
+/*******************************************************************************
+ * INCLUDE LIBRARIES
+ ******************************************************************************/
+#USER_SIMPLSHARP_LIBRARY "Ultamation.SimplSharp.CompanionLinkClient"
+
+/*******************************************************************************
+ * INPUTS & OUTPUTS
+ ******************************************************************************/
+DIGITAL_INPUT	_SKIP_, _SKIP_, ManualInitialise, ResetConnection, EnableDebug, _SKIP_;
+DIGITAL_INPUT	NavUp, NavDown, NavLeft, NavRight, NavSelect, NavMenu, NavTV, _SKIP_;
+//DIGITAL_INPUT	VolumeUp, VolumeDown, _SKIP_;
+//DIGITAL_INPUT	Siri; 
+DIGITAL_INPUT	Screensaver, _SKIP_;
+DIGITAL_INPUT	Sleep, Wake, _SKIP_;
+DIGITAL_INPUT	PlayPause, _SKIP_;
+//DIGITAL_INPUT	ChannelUp, ChannelDown, Guide, PageUp, PageDown;
+STRING_INPUT	LaunchAppByName$[ATV_APP_NAME_LEN];
+
+DIGITAL_OUTPUT	_SKIP_, _SKIP_, ConfigLoaded, TrialModeActive, LicenceKeyOk, AppleTvFound, AppleTvConnected, AppleTvVerified, AppleTvSessionActive, _SKIP_;
+STRING_OUTPUT	AppName[ATV_MAX_APPS,5];
+
+/*******************************************************************************
+ * PARAMETERS
+ ******************************************************************************/
+STRING_PARAMETER	AppleTvName[ATV_NAME_LEN];
+INTEGER_PARAMETER	AutoInit;
+
+/*******************************************************************************
+ * PARAMETER PROPERTIES
+ ******************************************************************************/
+#BEGIN_PARAMETER_PROPERTIES AppleTvName
+	propValidUnits = unitString; 
+  	propDefaultValue = "Must be set!";
+#END_PARAMETER_PROPERTIES
+
+#BEGIN_PARAMETER_PROPERTIES AutoInit
+	propValidUnits = unitDecimal;
+	propDefaultValue = 1d;
+	propList = { 0d, "Manual Initialisation" }, { 1d, "Initialise On Boot" };
+#END_PARAMETER_PROPERTIES                            
+
+/*******************************************************************************
+ * GLOBAL VARIABLES
+ * Note:	Be sure to initialize all declared global variables as needed
+ *			For example, in Function Main: g_temp = 0;
+ * Conventions:
+ *			Use a "g_" prefix for all global variables
+ ******************************************************************************/
+CLinkSPlus g_atv;
+
+/*******************************************************************************
+ * EVENT HANDLERS
+ ******************************************************************************/
+
+PUSH ManualInitialise {	g_atv.Initialise( AppleTvName ); }
+PUSH ResetConnection { g_atv.ResetConnection(); }
+PUSH EnableDebug { g_atv.DebugIsOn = 1; }
+RELEASE EnableDebug { g_atv.DebugIsOn = 0; }
+
+THREADSAFE PUSH NavUp { g_atv.Up(1); while( NavUp ){ delay(1); } g_atv.Up(0); }
+THREADSAFE PUSH NavDown { g_atv.Down(1); while( NavDown ){ delay(1); } g_atv.Down(0);  }
+THREADSAFE PUSH NavLeft { g_atv.Left(1); while( NavLeft ){ delay(1); } g_atv.Left(0);  }
+THREADSAFE PUSH NavRight { g_atv.Right(1); while( NavRight ){ delay(1); } g_atv.Right(0);  }
+THREADSAFE PUSH NavSelect { g_atv.Select(1); while( NavSelect ){ delay(1); } g_atv.Select(0);  }
+THREADSAFE PUSH NavMenu { g_atv.Menu(1); while( NavMenu ){ delay(1); } g_atv.Menu(0); }
+THREADSAFE PUSH NavTV { g_atv.Tv(1); while( NavTV ){ delay(1); } g_atv.Tv(0); }
+
+//THREADSAFE PUSH VolumeUp { g_atv.VolumeUp(1); while( VolumeUp ){ delay(1); } g_atv.VolumeUp(0); }
+//THREADSAFE PUSH VolumeDown { g_atv.VolumeDown(1); while( VolumeDown ){ delay(1); } g_atv.VolumeDown(0); }
+
+//THREADSAFE PUSH Siri { g_atv.Siri(1); while( Siri ){ delay(1); } g_atv.Siri(0); }
+THREADSAFE PUSH Screensaver { g_atv.Screensaver(1); while( Screensaver ){ delay(1); } g_atv.Screensaver(0); }
+
+THREADSAFE PUSH Sleep { g_atv.Sleep(1); while( Sleep ){ delay(1); } g_atv.Sleep(0); }
+THREADSAFE PUSH Wake { g_atv.Wake(1); while( Wake ){ delay(1); } g_atv.Wake(0); }
+
+THREADSAFE PUSH PlayPause { g_atv.PlayPause(1); while( PlayPause ){ delay(1); } g_atv.PlayPause(0); }
+
+//THREADSAFE PUSH ChannelUp { g_atv.ChannelUp(1); while( ChannelUp ){ delay(1); } g_atv.ChannelUp(0); }
+//THREADSAFE PUSH ChannelDown { g_atv.ChannelDown(1); while( ChannelDown ){ delay(1); } g_atv.ChannelDown(0); }
+//THREADSAFE PUSH Guide { g_atv.Guide(1); while( Guide ){ delay(1); } g_atv.Guide(0); }
+//THREADSAFE PUSH PageUp { g_atv.PageUp(1); while( PageUp ){ delay(1); } g_atv.PageUp(0); }
+//THREADSAFE PUSH PageDown { g_atv.PageDown(1); while( PageDown ){ delay(1); } g_atv.PageDown(0); }
+   
+CHANGE LaunchAppByName$ { g_atv.LaunchAppByName( LaunchAppByName$ ); }
+
+CALLBACK FUNCTION OnUpdateClientStatus()
+{
+	ConfigLoaded		= g_atv.ConfigIsLoaded;
+	TrialModeActive		= g_atv.InTrialMode;
+	LicenceKeyOk		= g_atv.LicenceKeyIsOk;
+	AppleTvFound		= g_atv.AppleTvFound;
+	AppleTvConnected	= g_atv.AppleTvConnected;
+	AppleTvVerified		= g_atv.AppleTvVerified;
+	AppleTvSessionActive= g_atv.AppleTvSessionActive;
+}
+
+CALLBACK FUNCTION OnUpdateAppList()
+{
+	STRING tmpName[ATV_APP_NAME_LEN];
+	INTEGER appCount, i;
+	appCount = Min(ATV_MAX_APPS, g_atv.GetAppListSize);
+	for(i=1 to appCount)
+	{
+        tmpName = g_atv.GetAppName(i-1);
+		AppName[i] = tmpName;
+	}
+}
+
+/*******************************************************************************
+ * main()
+ * This code will get called when the system starts up
+ ******************************************************************************/
+FUNCTION main()
+{	
+	RegisterDelegate( g_atv, UpdateClientStatus, OnUpdateClientStatus );             
+	RegisterDelegate( g_atv, UpdateAppList, OnUpdateAppList );             
+	if( AutoInit = 1 )                         
+		g_atv.Initialise( AppleTvName );
+}

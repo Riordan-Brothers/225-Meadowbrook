@@ -1,0 +1,183 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name:	Crestron Electronics
+System Name:
+System Number:
+Programmer:		PAC
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+// #ENABLE_DYNAMIC
+#SYMBOL_NAME "DSC PowerSeries Serial Queue v1.0"
+// #HINT ""
+#DEFINE_CONSTANT	ciQUEUESIZE	20
+#DEFINE_CONSTANT	ciMAXCHARS	30
+// #CATEGORY "" 
+#DEFAULT_VOLATILE
+// #PRINT_TO_TRACE
+// #DIGITAL_EXPAND 
+// #ANALOG_SERIAL_EXPAND 
+// #OUTPUT_SHIFT 
+// #HELP_PDF_FILE ""
+// #DEFAULT_NONVOLATILE
+// #ENABLE_STACK_CHECKING
+// #ENABLE_TRACE
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+BUFFER_INPUT	From_Modules[1000], From_Device[5000];
+
+STRING_OUTPUT	To_Virtual_Keypad, To_Zones, To_System, To_Device, To_Partition[8];
+/*******************************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+*******************************************************************************************/
+INTEGER	iNextStore, iNextSend, iTemp, iTemp1, iFlag1, iFlag2, iOkToSend;
+STRING	sQueue[ciQUEUESIZE][ciMAXCHARS], sTemp1[ciMAXCHARS], sTemp[250];
+/*******************************************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+*******************************************************************************************/
+Function fStoreCommand()
+{
+	sQueue[iNextStore] = sTemp1;
+	iNextStore = iNextStore + 1;
+	if(iNextStore > ciQUEUESIZE)
+	{
+		iNextStore = 1;
+	}
+}
+
+Function fSendCommand()
+{
+	if((iNextSend <> iNextStore) && (iOkToSend = 1))
+	{
+		To_Device = sQueue[iNextSend];
+		iOkToSend = 0;
+		iNextSend = iNextSend + 1;
+		if(iNextSend > ciQUEUESIZE)
+		{
+			iNextSend = 1;
+		}
+	}
+}
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+CHANGE From_Modules
+{
+	if(iFlag2 = 0)
+	{
+		iFlag2 = 1;
+		while(find("\x0D\x0A", From_Modules) > 0)
+		{
+			sTemp1 = remove("\x0D\x0A", From_Modules);
+			call fStoreCommand();
+			call fSendCommand();
+			sTemp1 = "";
+		}
+		iFlag2 = 0;
+	}
+}
+
+CHANGE From_Device
+{
+	if(iFlag1 = 0)
+	{
+		iFlag1 = 1;
+		while(find("\x0D\x0A", From_Device) > 0)
+		{
+			sTemp = remove("\x0D\x0A", From_Device);
+			iTemp = atoi(left(sTemp, 3));
+			if(iTemp = 500)
+			{
+				To_System = sTemp;
+			}
+			else if((iTemp >= 620) && (iTemp <= 632))
+			{
+				To_System = sTemp;
+			}
+			else if((iTemp >= 800) && (iTemp <= 816))
+			{
+				To_System = sTemp;
+			}
+			else if((iTemp >= 825) && (iTemp <= 832))
+			{
+				To_System = sTemp;
+			}
+			else if((iTemp >= 842) && (iTemp <= 843))
+			{
+				To_System = sTemp;
+			}
+			else if((iTemp >= 601) && (iTemp <= 604))
+			{
+				iTemp1 = atoi(mid(sTemp, 4, 1));
+				To_Partition[iTemp1] = sTemp;
+				To_Zones = sTemp;
+			}
+			else if((iTemp >= 650) && (iTemp <= 751))
+			{
+				iTemp1 = atoi(mid(sTemp, 4, 1));
+				To_Partition[iTemp1] = sTemp;
+			}
+			else if((iTemp >= 840) && (iTemp <= 841))
+			{
+				iTemp1 = atoi(mid(sTemp, 4, 1));
+				To_Partition[iTemp1] = sTemp;
+			}
+			else if(iTemp = 900)
+			{
+				iTemp1 = atoi(mid(sTemp, 4, 1));
+				To_Partition[iTemp1] = sTemp;
+			}
+			else if((iTemp >= 605) && (iTemp <= 610))
+			{
+				To_Zones = sTemp;
+			}
+			else if((iTemp >= 821) && (iTemp <= 822))
+			{
+				To_Zones = sTemp;
+			}
+			else if((iTemp >= 901) && (iTemp <= 907))
+			{
+				To_Virtual_Keypad = sTemp;
+			}
+			sTemp = "";
+			iOkToSend = 1;
+			if(len(From_Device) = 0)
+			{
+				call fSendCommand();
+			}
+		}
+		iFlag1 = 0;
+	}
+}
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+Function Main()
+{
+	iFlag1 = 0;
+	iFlag2 = 0;
+	iOkToSend = 1;
+}

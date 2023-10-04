@@ -1,0 +1,42 @@
+/*
+Dealer Name: Riordan Brothers
+Programmer: Hope Roth
+Comments:
+*/
+
+
+#SYMBOL_NAME "RBI NVX Helper v1"
+// #HINT ""
+// #CATEGORY "" 
+
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+#ENABLE_TRACE
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+
+DIGITAL_INPUT ClearSource, _SKIP_, SourceSelect[24];
+STRING_INPUT _SKIP_, _SKIP_, SourceStream[24][255];
+        
+ANALOG_OUTPUT StreamOutNumFb;
+STRING_OUTPUT StreamOut;
+
+PUSH ClearSource
+	{
+		StreamOut = "";
+	}  
+
+
+PUSH SourceSelect
+	{
+     	integer i;
+		i = GetLastModifiedArrayIndex();
+
+        StreamOut = SourceStream[i];
+		StreamOutNumFb = i;
+	}
+
