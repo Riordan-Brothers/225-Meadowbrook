@@ -15356,7 +15356,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.TCPServer.ReceiveData(System.UInt32,System.Int32)">
             <summary>
             Function to read data from the client at the specified index
-            This function will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.IncomingDataBuffer"/> before reading in new data.
             </summary>
             <param name="clientIndex"> Client Index</param>
             <param name="offset"> Offset into the packet to start receive</param>
@@ -15365,7 +15365,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.TCPServer.ReceiveData(System.UInt32)">
             <summary>
             Function to read data from the client at the specified index
-            This function will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.IncomingDataBuffer"/> before reading in new data.
             </summary>
             <param name="clientIndex"> Client Index</param>
             <returns>Number of bytes received.</returns>
@@ -15374,7 +15374,7 @@
             <summary>
             Function to read data asynchronously from the TCP client. This is a non-blocking call.
             This assumes a single client is connected to the server and reads data from that client.
-            This will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="pReceiveCallback"> Callback function to get invoked when data has been received or an error occurs</param>
@@ -15384,7 +15384,7 @@
             <summary>
             Function to read data asynchronously from the TCP client. This is a non-blocking call.
             This assumes a single client is connected to the server and reads data from that client.
-            This will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="pReceiveCallback"> Callback function to get invoked when data has been received or an error occurs</param>
@@ -15400,7 +15400,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.TCPServer.ReceiveDataAsync(System.UInt32,Crestron.SimplSharp.CrestronSockets.TCPServerReceiveCallback,System.Int32)">
             <summary>
             Function to read data from the client at the specified index
-            This function will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="clientIndex"> Client Index</param>
@@ -15411,7 +15411,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.TCPServer.ReceiveDataAsync(System.UInt32,Crestron.SimplSharp.CrestronSockets.TCPServerReceiveCallback)">
             <summary>
             Function to read data from the client at the specified index
-            This function will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="clientIndex"> Client Index</param>
@@ -15421,7 +15421,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.TCPServer.ReceiveDataAsync(System.UInt32,Crestron.SimplSharp.CrestronSockets.TCPServerReceiveCallbackEx,System.Int32,System.Object)">
             <summary>
             Function to read data from the client at the specified index
-            This function will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="clientIndex"> Client Index</param>
@@ -15433,7 +15433,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.TCPServer.ReceiveDataAsync(System.UInt32,Crestron.SimplSharp.CrestronSockets.TCPServerReceiveCallbackEx,System.Object)">
             <summary>
             Function to read data from the client at the specified index
-            This function will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="clientIndex"> Client Index</param>
@@ -15452,7 +15452,7 @@
             <summary>
             Function to read data from the client
             This assumes a single client is connected to the server and reads data from that client.
-            This function will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.IncomingDataBuffer"/> before reading in new data.
             </summary>
             <returns>Number of bytes received.</returns>
         </member>
@@ -15570,6 +15570,11 @@
             This assumes a single client is connected to the server and returns the address of that client
             </summary>
             <returns> Socket status ...</returns>
+        </member>
+        <member name="P:Crestron.SimplSharp.CrestronSockets.TCPServer.ClearIncomingDataBuffer">
+            <summary>
+            Property to enable or disable the clearing of <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPServer.IncomingDataBuffer"/> of clients when calls to <see cref="M:Crestron.SimplSharp.CrestronSockets.TCPServer.ReceiveData"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.TCPServer.ReceiveData(System.UInt32)"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.TCPServer.ReceiveData(System.UInt32,System.Int32)"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.TCPServer.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.TCPServerReceiveCallback)"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.TCPServer.ReceiveDataAsync(System.UInt32,Crestron.SimplSharp.CrestronSockets.TCPServerReceiveCallback)"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.TCPServer.ReceiveDataAsync(System.UInt32,Crestron.SimplSharp.CrestronSockets.TCPServerReceiveCallback,System.Int32)"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.TCPServer.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.TCPServerReceiveCallbackEx,System.Object)"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.TCPServer.ReceiveDataAsync(System.UInt32,Crestron.SimplSharp.CrestronSockets.TCPServerReceiveCallbackEx,System.Int32,System.Object)"/>, or <see cref="M:Crestron.SimplSharp.CrestronSockets.TCPServer.ReceiveDataAsync(System.UInt32,Crestron.SimplSharp.CrestronSockets.TCPServerReceiveCallbackEx,System.Object)"/>  are made.
+            </summary>
         </member>
         <member name="P:Crestron.SimplSharp.CrestronSockets.TCPServer.DataAvailable">
             <summary>
@@ -16278,7 +16283,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ReceiveData(System.UInt32,System.Int32)">
             <summary>
             Function to read data from the client at the specified index
-            This function will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.IncomingDataBuffer"/> before reading in new data.
             </summary>
             <param name="clientIndex"> Client Index</param>
             <param name="offset"> Offset into the packet to start receive</param>
@@ -16287,7 +16292,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ReceiveData(System.UInt32)">
             <summary>
             Function to read data from the client at the specified index
-            This function will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.IncomingDataBuffer"/> before reading in new data.
             </summary>
             <param name="clientIndex"> Client Index</param>
             <returns>Number of bytes received.</returns>
@@ -16296,7 +16301,7 @@
             <summary>
             Function to read data asynchronously from the TCP client. This is a non-blocking call.
             This assumes a single client is connected to the server and reads data from that client.
-            This will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="pReceiveCallback"> Callback function to get invoked when data has been received or an error occurs</param>
@@ -16306,7 +16311,7 @@
             <summary>
             Function to read data asynchronously from the TCP client. This is a non-blocking call.
             This assumes a single client is connected to the server and reads data from that client.
-            This will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="pReceiveCallback"> Callback function to get invoked when data has been received or an error occurs</param>
@@ -16322,7 +16327,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ReceiveDataAsync(System.UInt32,Crestron.SimplSharp.CrestronSockets.SecureTCPServerReceiveCallback,System.Int32)">
             <summary>
             Function to read data from the client at the specified index
-            This function will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="clientIndex"> Client Index</param>
@@ -16333,7 +16338,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ReceiveDataAsync(System.UInt32,Crestron.SimplSharp.CrestronSockets.SecureTCPServerReceiveCallback)">
             <summary>
             Function to read data from the client at the specified index
-            This function will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="clientIndex"> Client Index</param>
@@ -16343,7 +16348,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ReceiveDataAsync(System.UInt32,Crestron.SimplSharp.CrestronSockets.SecureTCPServerReceiveCallbackEx,System.Int32,System.Object)">
             <summary>
             Function to read data from the client at the specified index
-            This function will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="clientIndex"> Client Index</param>
@@ -16355,7 +16360,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ReceiveDataAsync(System.UInt32,Crestron.SimplSharp.CrestronSockets.SecureTCPServerReceiveCallbackEx,System.Object)">
             <summary>
             Function to read data from the client at the specified index
-            This function will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="clientIndex"> Client Index</param>
@@ -16374,7 +16379,7 @@
             <summary>
             Function to read data from the client
             This assumes a single client is connected to the server and reads data from that client.
-            This function will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.IncomingDataBuffer"/> before reading in new data.
             </summary>
             <returns>Number of bytes received.</returns>
         </member>
@@ -16504,6 +16509,11 @@
             This assumes a single client is connected to the server and returns true if there is data which can be read from that specific client.
             </summary>
         </member>
+        <member name="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ClearIncomingDataBuffer">
+            <summary>
+            Property to enable or disable the clearing of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.IncomingDataBuffer"/> of clients when calls to <see cref="M:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ReceiveData"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ReceiveData(System.UInt32)"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ReceiveData(System.UInt32,System.Int32)"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.SecureTCPServerReceiveCallback)"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.SecureTCPServerReceiveCallbackEx,System.Object)"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ReceiveDataAsync(System.UInt32,Crestron.SimplSharp.CrestronSockets.SecureTCPServerReceiveCallback)"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ReceiveDataAsync(System.UInt32,Crestron.SimplSharp.CrestronSockets.SecureTCPServerReceiveCallback,System.Int32)"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ReceiveDataAsync(System.UInt32,Crestron.SimplSharp.CrestronSockets.SecureTCPServerReceiveCallbackEx,System.Int32,System.Object)"/>, or <see cref="M:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ReceiveDataAsync(System.UInt32,Crestron.SimplSharp.CrestronSockets.SecureTCPServerReceiveCallbackEx,System.Object)"/>  are made.
+            </summary>
+        </member>
         <member name="T:Crestron.SimplSharp.CrestronSockets.SecureTCPServer.ActiveSocket">
             <summary>
             private class for the active socket 
@@ -16601,7 +16611,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.TCPClient.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.TCPClientReceiveCallback,System.Int32)">
             <summary>
             Function to read data asynchronously from the TCP client. This is a non-blocking call.
-            This will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPClient.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPClient.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="pReceiveCallback"> Callback function to get invoked when data has been received or an error occurs</param>
@@ -16622,7 +16632,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.TCPClient.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.TCPClientReceiveCallbackEx,System.Int32,System.Object)">
             <summary>
             Function to read data asynchronously from the TCP client. This is a non-blocking call.
-            This will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPClient.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPClient.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="pReceiveCallback"> Callback function to get invoked when data has been received or an error occurs</param>
@@ -16645,7 +16655,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.TCPClient.ReceiveData(System.Int32)">
             <summary>
             Function to read data from the TCP client
-            This will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPClient.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPClient.IncomingDataBuffer"/> before reading in new data.
             </summary>
             <param name="offset"> Offset to read the data from</param>
             <exception cref="T:Crestron.SimplSharp.CrestronIO.IOException">Internal buffer is not initialized.</exception>
@@ -16654,7 +16664,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.TCPClient.ReceiveData">
             <summary>
             Function to read data from the TCP client
-            This will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPClient.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPClient.IncomingDataBuffer"/> before reading in new data.
             </summary>
             <returns>The number of bytes received by the client.</returns>
         </member>
@@ -16816,6 +16826,11 @@
         <member name="P:Crestron.SimplSharp.CrestronSockets.TCPClient.DataAvailable">
             <summary>
             Indicates whether data is available on the client to be read.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharp.CrestronSockets.TCPClient.ClearIncomingDataBuffer">
+            <summary>
+            Property to enable or disable the clearing of <see cref="P:Crestron.SimplSharp.CrestronSockets.TCPClient.IncomingDataBuffer"/> when calls to <see cref="M:Crestron.SimplSharp.CrestronSockets.TCPClient.ReceiveData"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.TCPClient.ReceiveData(System.Int32)"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.TCPClient.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.TCPClientReceiveCallback)"/> , <see cref="M:Crestron.SimplSharp.CrestronSockets.TCPClient.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.TCPClientReceiveCallback,System.Int32)"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.TCPClient.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.TCPClientReceiveCallbackEx,System.Int32,System.Object)"/>, or <see cref="M:Crestron.SimplSharp.CrestronSockets.TCPClient.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.TCPClientReceiveCallbackEx,System.Object)"/> are made.
             </summary>
         </member>
         <member name="T:Crestron.SimplSharp.CrestronSockets.SecureTCPClient">
@@ -17016,7 +17031,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.SecureTCPClientReceiveCallback,System.Int32)">
             <summary>
             Function to read data asynchronously from the TCP client. This is a non-blocking call.
-            This will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="pReceiveCallback"> Callback function to get invoked when data has been received or an error occurs</param>
@@ -17026,7 +17041,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.SecureTCPClientReceiveCallback)">
             <summary>
             Function to read data asynchronously from the TCP client. This is a non-blocking call.
-            This will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="pReceiveCallback"> Callback function to get invoked when data has been received or an error occurs</param>
@@ -17035,7 +17050,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.SecureTCPClientReceiveCallbackEx,System.Int32,System.Object)">
             <summary>
             Function to read data asynchronously from the TCP client. This is a non-blocking call.
-            This will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="pReceiveCallback"> Callback function to get invoked when data has been received or an error occurs</param>
@@ -17046,7 +17061,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.SecureTCPClientReceiveCallbackEx,System.Object)">
             <summary>
             Function to read data asynchronously from the TCP client. This is a non-blocking call.
-            This will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.IncomingDataBuffer"/> before reading in new data.
             The callback function gets invoked once the read succeeds or an error occurs.
             </summary>
             <param name="pReceiveCallbackEx"> Callback function to get invoked when data has been received or an error occurs</param>
@@ -17056,7 +17071,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ReceiveData(System.Int32)">
             <summary>
             Function to read data from the TCP client
-            This will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.IncomingDataBuffer"/> before reading in new data.
             </summary>
             <param name="offset"> Offset to read the data from</param>
             <returns>The number of bytes received by the client.</returns>
@@ -17064,7 +17079,7 @@
         <member name="M:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ReceiveData">
             <summary>
             Function to read data from the TCP client
-            This will clear out the buffer before reading in new data.
+            Based on the state of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ClearIncomingDataBuffer"/>, this may clear <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.IncomingDataBuffer"/> before reading in new data.
             </summary>
             <returns>The number of bytes received by the client.</returns>
         </member>
@@ -17231,6 +17246,11 @@
         <member name="P:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.DataAvailable">
             <summary>
             Indicates whether data is available on the client to be read.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ClearIncomingDataBuffer">
+            <summary>
+            Property to enable or disable the clearing of <see cref="P:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.IncomingDataBuffer"/> when calls to <see cref="M:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ReceiveData"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ReceiveData(System.Int32)"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.SecureTCPClientReceiveCallback)"/> , <see cref="M:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.SecureTCPClientReceiveCallback,System.Int32)"/>, <see cref="M:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.SecureTCPClientReceiveCallbackEx,System.Int32,System.Object)"/>, or <see cref="M:Crestron.SimplSharp.CrestronSockets.SecureTCPClient.ReceiveDataAsync(Crestron.SimplSharp.CrestronSockets.SecureTCPClientReceiveCallbackEx,System.Object)"/> are made.
             </summary>
         </member>
         <member name="T:Crestron.SimplSharp.CrestronSockets.UDPServer">
