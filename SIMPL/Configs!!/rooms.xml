@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<file xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<room roomID="room01">
+		<room_name>Garage</room_name>
+		<room_num>1</room_num>
+		<equip_ID>101</equip_ID>
+		<num_zones>1</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room02">
+		<room_name>Half Bath</room_name>
+		<room_num>2</room_num>
+		<equip_ID>102</equip_ID>
+		<num_zones>1</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room03">
+		<room_name>Loft</room_name>
+		<room_num>3</room_num>
+		<equip_ID>103</equip_ID>
+		<num_zones>1</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room04">
+		<room_name>Bed 02</room_name>
+		<room_num>4</room_num>
+		<equip_ID>104</equip_ID>
+		<num_zones>1</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room05">
+		<room_name>Bed 03</room_name>
+		<room_num>5</room_num>
+		<equip_ID>105</equip_ID>
+		<num_zones>1</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room06">
+		<room_name>Bed 04</room_name>
+		<room_num>6</room_num>
+		<equip_ID>106</equip_ID>
+		<num_zones>1</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room07">
+		<room_name>Basement Hall</room_name>
+		<room_num>7</room_num>
+		<equip_ID>107</equip_ID>
+		<num_zones>1</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room08">
+		<room_name>Mechanical</room_name>
+		<room_num>8</room_num>
+		<equip_ID>108</equip_ID>
+		<num_zones>1</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room09">
+		<room_name>Bed 04 Closet</room_name>
+		<room_num>9</room_num>
+		<equip_ID>109</equip_ID>
+		<num_zones>1</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room10">
+		<room_name>Bed 01</room_name>
+		<room_num>10</room_num>
+		<equip_ID>110</equip_ID>
+		<num_zones>2</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room11">
+		<room_name>Foyer</room_name>
+		<room_num>11</room_num>
+		<equip_ID>111</equip_ID>
+		<num_zones>2</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room12">
+		<room_name>Porch</room_name>
+		<room_num>12</room_num>
+		<equip_ID>112</equip_ID>
+		<num_zones>2</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room13">
+		<room_name>Dressing</room_name>
+		<room_num>13</room_num>
+		<equip_ID>113</equip_ID>
+		<num_zones>2</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room14">
+		<room_name>Laundry</room_name>
+		<room_num>14</room_num>
+		<equip_ID>114</equip_ID>
+		<num_zones>2</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room15">
+		<room_name>Pantry</room_name>
+		<room_num>15</room_num>
+		<equip_ID>115</equip_ID>
+		<num_zones>2</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room16">
+		<room_name>Stair Hall</room_name>
+		<room_num>16</room_num>
+		<equip_ID>116</equip_ID>
+		<num_zones>2</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room17">
+		<room_name>Basment 1/2 Bath</room_name>
+		<room_num>17</room_num>
+		<equip_ID>117</equip_ID>
+		<num_zones>2</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room18">
+		<room_name>Bath 02</room_name>
+		<room_num>18</room_num>
+		<equip_ID>118</equip_ID>
+		<num_zones>4</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room19">
+		<room_name>Bath 03</room_name>
+		<room_num>19</room_num>
+		<equip_ID>119</equip_ID>
+		<num_zones>4</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room20">
+		<room_name>Bath 04</room_name>
+		<room_num>20</room_num>
+		<equip_ID>120</equip_ID>
+		<num_zones>5</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room21">
+		<room_name>Kitchen</room_name>
+		<room_num>21</room_num>
+		<equip_ID>121</equip_ID>
+		<num_zones>5</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room22">
+		<room_name>Living</room_name>
+		<room_num>22</room_num>
+		<equip_ID>122</equip_ID>
+		<num_zones>5</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room23">
+		<room_name>Bath 01</room_name>
+		<room_num>23</room_num>
+		<equip_ID>123</equip_ID>
+		<num_zones>6</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room24">
+		<room_name>Exterior</room_name>
+		<room_num>24</room_num>
+		<equip_ID>124</equip_ID>
+		<num_zones>7</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+	<room roomID="room25">
+		<room_name>Library</room_name>
+		<room_num>25</room_num>
+		<equip_ID>125</equip_ID>
+		<num_zones>3</num_zones>
+		<uses_presets>1</uses_presets>
+		<num_presets>6</num_presets>
+		<has_shades>0</has_shades>
+		<num_shades>0</num_shades>
+		<all_on_name>All On</all_on_name>
+		<all_off_name>All Off</all_off_name>
+		<preset01_name>Preset 01</preset01_name>
+		<preset02_name>Preset 02</preset02_name>
+		<preset03_name>Preset 03</preset03_name>
+		<preset04_name>Preset 04</preset04_name>
+		<preset05_name>Preset 05</preset05_name>
+		<preset06_name>Preset 06</preset06_name>
+		<preset07_name>Preset 07</preset07_name>
+		<preset08_name>Preset 08</preset08_name>
+		<occ_timeout>600</occ_timeout>
+		<occ_mode>1</occ_mode>
+		<vac_mode>9</vac_mode>
+	</room>
+</file>
