@@ -8,13 +8,13 @@ VTProeVer=6.2.02
 ]
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Configs_Config Status.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Configs_Config Status.ced
 Hint=Config Status (Smart Object ID=34)
 Code=18
 SGControlType=Subpage Reference List Horizontal
 SGControlName=Config Status
 GUID=30B1DFAC-7DA0-4A6C-98AD-73C64CCC0F8C
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Configs_Config Status.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Configs_Config Status.ced
 SMWRev=4.02.20
 Expand=expand_random
 HelpID=10124
@@ -421,7 +421,7 @@ Sgn=0
 [
 ObjTp=CED
 H=18
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Configs_Config Status.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Configs_Config Status.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1

@@ -8,13 +8,13 @@ VTProeVer=6.2.02
 ]
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Room Select_Room Select List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Room Select_Room Select List.ced
 Hint=Room Select List (Smart Object ID=6)
 Code=17
 SGControlType=Dynamic Button List Vertical
 SGControlName=Room Select List
 GUID=123B0A38-6C95-448F-9073-627946ACE04E
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Popup - Room Select_Room Select List.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Popup - Room Select_Room Select List.ced
 SMWRev=4.02.20
 Expand=expand_random
 HelpID=10112
@@ -737,7 +737,7 @@ Sgn=0
 [
 ObjTp=CED
 H=17
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Room Select_Room Select List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Room Select_Room Select List.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1

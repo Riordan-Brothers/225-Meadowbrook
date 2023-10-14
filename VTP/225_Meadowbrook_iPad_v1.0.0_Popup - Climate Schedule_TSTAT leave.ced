@@ -8,13 +8,13 @@ VTProeVer=6.2.02
 ]
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT leave.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT leave.ced
 Hint=TSTAT leave (Smart Object ID=22)
 Code=8
 SGControlType=Vertical Tab Button
 SGControlName=TSTAT leave
 GUID=6A93F9A0-48B8-44BB-8D02-3979F098432B
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT leave.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT leave.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10074
@@ -73,7 +73,7 @@ Sgn=0
 [
 ObjTp=CED
 H=8
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT leave.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT leave.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1

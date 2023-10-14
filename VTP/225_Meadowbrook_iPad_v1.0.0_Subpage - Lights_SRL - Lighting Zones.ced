@@ -8,13 +8,13 @@ VTProeVer=6.2.02
 ]
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Lights_SRL - Lighting Zones.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Lights_SRL - Lighting Zones.ced
 Hint=SRL - Lighting Zones (Smart Object ID=3)
 Code=19
 SGControlType=Subpage Reference List Horizontal
 SGControlName=SRL - Lighting Zones
 GUID=38E62AF1-6291-4344-BC79-0960B45CA21A
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Lights_SRL - Lighting Zones.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Lights_SRL - Lighting Zones.ced
 SMWRev=4.02.20
 Expand=expand_random
 HelpID=10124
@@ -3305,7 +3305,7 @@ Sgn=0
 [
 ObjTp=CED
 H=19
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Lights_SRL - Lighting Zones.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Lights_SRL - Lighting Zones.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1

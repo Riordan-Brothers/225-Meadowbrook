@@ -4,24 +4,24 @@ Sgntr=SGD
 RelVrs=3
 VTProeVer=6.2.02
 Schema=1
-CRCGUID=7A0F1008-28BC-4865-9CAB-C31F4F63DF0B
+CRCGUID=9D0E19D3-792D-4A48-9EF7-575F8FEA01D8
 ]
 ;================================================================================
 [
 ObjTp=Hd
-ProjectFile=225_Meadowbrook_iPad_v1.0.0.vtp
+ProjectFile=225_Meadowbrook_ipad_v1.0.0.vtp
 VtpGuid=FA7688CD-CF52-44D2-9167-46FABD626CFC
 ]
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Source - Media Player_Media Player Application.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Source - Media Player_Media Player Application.ced
 Hint=Media Player Application (Smart Object ID=2)
 Code=1
 SGControlType=Media Player Application
 SGControlName=Media Player Application
 GUID=7227FA57-96B5-44C2-AA2E-5C47035EE72E
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Source - Media Player_Media Player Application.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Source - Media Player_Media Player Application.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10040
@@ -88,7 +88,7 @@ Sgn=0
 [
 ObjTp=CED
 H=1
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Source - Media Player_Media Player Application.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Source - Media Player_Media Player Application.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -97,13 +97,13 @@ CedMod=Media Server Object Router v4.0.cmc
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Video Source Select_Video Source Select List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Video Source Select_Video Source Select List.ced
 Hint=Video Source Select List (Smart Object ID=11)
 Code=2
 SGControlType=Dynamic Button List Horizontal
 SGControlName=Video Source Select List
 GUID=60CBA4A6-EADF-4E05-9446-61A555D9279E
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Video Source Select_Video Source Select List.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Video Source Select_Video Source Select List.ced
 SMWRev=4.02.20
 Expand=expand_random
 HelpID=10111
@@ -514,7 +514,7 @@ Sgn=0
 [
 ObjTp=CED
 H=2
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Video Source Select_Video Source Select List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Video Source Select_Video Source Select List.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -522,13 +522,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Source - AppleTV_AppleTV DPad.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Source - AppleTV_AppleTV DPad.ced
 Hint=AppleTV DPad (Smart Object ID=17)
 Code=3
 SGControlType=DPad
 SGControlName=AppleTV DPad
 GUID=560B313F-9BDC-4B36-88E9-0F9262BD617F
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Source - AppleTV_AppleTV DPad.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Source - AppleTV_AppleTV DPad.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10015
@@ -591,7 +591,7 @@ Sgn=0
 [
 ObjTp=CED
 H=3
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Source - AppleTV_AppleTV DPad.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Source - AppleTV_AppleTV DPad.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -599,13 +599,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Climate_Climate Fan Mode.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Climate_Climate Fan Mode.ced
 Hint=Climate Fan Mode (Smart Object ID=20)
 Code=4
 SGControlType=Vertical Tab Button
 SGControlName=Climate Fan Mode
 GUID=F88288C5-93D9-4146-89B0-0B68701EB216
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Climate_Climate Fan Mode.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Climate_Climate Fan Mode.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10074
@@ -664,7 +664,7 @@ Sgn=0
 [
 ObjTp=CED
 H=4
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Climate_Climate Fan Mode.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Climate_Climate Fan Mode.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -672,13 +672,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Climate_Climate Hold_Prog_Away.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Climate_Climate Hold_Prog_Away.ced
 Hint=Climate Hold/Prog/Away (Smart Object ID=19)
 Code=5
 SGControlType=Horizontal Tab Button
 SGControlName=Climate Hold/Prog/Away
 GUID=601FF7D9-7ABC-43E9-A419-3E4140ADA1D3
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Climate_Climate Hold_Prog_Away.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Climate_Climate Hold_Prog_Away.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10031
@@ -745,7 +745,7 @@ Sgn=0
 [
 ObjTp=CED
 H=5
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Climate_Climate Hold_Prog_Away.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Climate_Climate Hold_Prog_Away.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -753,13 +753,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Climate_Climate Room Select.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Climate_Climate Room Select.ced
 Hint=Climate Room Select (Smart Object ID=18)
 Code=6
 SGControlType=Vertical Tab Button
 SGControlName=Climate Room Select
 GUID=D8393743-04DD-4551-9F9F-E47979DB8F4F
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Climate_Climate Room Select.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Climate_Climate Room Select.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10074
@@ -890,7 +890,7 @@ Sgn=0
 [
 ObjTp=CED
 H=6
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Climate_Climate Room Select.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Climate_Climate Room Select.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -898,13 +898,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT wake.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT wake.ced
 Hint=TSTAT wake (Smart Object ID=21)
 Code=7
 SGControlType=Vertical Tab Button
 SGControlName=TSTAT wake
 GUID=1C148063-FF7E-4211-B539-CD5EEE0679E4
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT wake.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT wake.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10074
@@ -963,7 +963,7 @@ Sgn=0
 [
 ObjTp=CED
 H=7
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT wake.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT wake.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -971,13 +971,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT leave.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT leave.ced
 Hint=TSTAT leave (Smart Object ID=22)
 Code=8
 SGControlType=Vertical Tab Button
 SGControlName=TSTAT leave
 GUID=6A93F9A0-48B8-44BB-8D02-3979F098432B
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT leave.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT leave.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10074
@@ -1036,7 +1036,7 @@ Sgn=0
 [
 ObjTp=CED
 H=8
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT leave.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT leave.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -1044,13 +1044,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT return.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT return.ced
 Hint=TSTAT return (Smart Object ID=23)
 Code=9
 SGControlType=Vertical Tab Button
 SGControlName=TSTAT return
 GUID=334803D8-C93A-488F-9CF6-7CEEAADD192E
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT return.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT return.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10074
@@ -1109,7 +1109,7 @@ Sgn=0
 [
 ObjTp=CED
 H=9
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT return.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT return.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -1117,13 +1117,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT sleep.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT sleep.ced
 Hint=TSTAT sleep (Smart Object ID=24)
 Code=10
 SGControlType=Vertical Tab Button
 SGControlName=TSTAT sleep
 GUID=27F4A7BF-644F-47B6-9267-09BFEB0B1F3A
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT sleep.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT sleep.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10074
@@ -1182,7 +1182,7 @@ Sgn=0
 [
 ObjTp=CED
 H=10
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT sleep.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT sleep.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -1190,13 +1190,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Humidity_TSTAT humidity.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Humidity_TSTAT humidity.ced
 Hint=TSTAT humidity (Smart Object ID=25)
 Code=11
 SGControlType=Vertical Tab Button
 SGControlName=TSTAT humidity
 GUID=A6495313-957F-454B-88A2-6E66401465C5
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Popup - Humidity_TSTAT humidity.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Popup - Humidity_TSTAT humidity.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10074
@@ -1255,7 +1255,7 @@ Sgn=0
 [
 ObjTp=CED
 H=11
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Humidity_TSTAT humidity.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Humidity_TSTAT humidity.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -1263,13 +1263,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Schedule_Scheduler Events List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Schedule_Scheduler Events List.ced
 Hint=Scheduler Events List (Smart Object ID=28)
 Code=12
 SGControlType=Dynamic Button List Vertical
 SGControlName=Scheduler Events List
 GUID=840EBB58-73CE-4CE2-BA2B-EA978138BD76
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Schedule_Scheduler Events List.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Schedule_Scheduler Events List.ced
 SMWRev=4.02.20
 Expand=expand_random
 HelpID=10112
@@ -2712,7 +2712,7 @@ Sgn=0
 [
 ObjTp=CED
 H=12
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Schedule_Scheduler Events List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Schedule_Scheduler Events List.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -2720,13 +2720,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Schedule_Scheduler Check Days FB.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Schedule_Scheduler Check Days FB.ced
 Hint=Scheduler Check Days FB (Smart Object ID=30)
 Code=13
 SGControlType=Checkbox List Vertical
 SGControlName=Scheduler Check Days FB
 GUID=BD40BDE1-DBF7-4732-8671-47034B354E78
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Schedule_Scheduler Check Days FB.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Schedule_Scheduler Check Days FB.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10011
@@ -2849,7 +2849,7 @@ Sgn=0
 [
 ObjTp=CED
 H=13
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Schedule_Scheduler Check Days FB.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Schedule_Scheduler Check Days FB.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -2857,13 +2857,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Scheduler Edit Event_Scheduler Check Days Edit.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Scheduler Edit Event_Scheduler Check Days Edit.ced
 Hint=Scheduler Check Days Edit (Smart Object ID=31)
 Code=14
 SGControlType=Checkbox List Vertical
 SGControlName=Scheduler Check Days Edit
 GUID=1FC7E002-78BD-4FBE-AD9F-FC6B6D9EC48B
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Popup - Scheduler Edit Event_Scheduler Check Days Edit.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Popup - Scheduler Edit Event_Scheduler Check Days Edit.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10011
@@ -2986,7 +2986,7 @@ Sgn=0
 [
 ObjTp=CED
 H=14
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Scheduler Edit Event_Scheduler Check Days Edit.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Scheduler Edit Event_Scheduler Check Days Edit.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -2994,13 +2994,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Scheduler Global Actions_Scheduler Global Actions.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Scheduler Global Actions_Scheduler Global Actions.ced
 Hint=Scheduler Global Actions (Smart Object ID=32)
 Code=15
 SGControlType=Checkbox List Vertical
 SGControlName=Scheduler Global Actions
 GUID=98F6C08F-8AC6-4247-9C44-5F7447F15A61
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Popup - Scheduler Global Actions_Scheduler Global Actions.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Popup - Scheduler Global Actions_Scheduler Global Actions.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10011
@@ -3467,7 +3467,7 @@ Sgn=0
 [
 ObjTp=CED
 H=15
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Scheduler Global Actions_Scheduler Global Actions.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Scheduler Global Actions_Scheduler Global Actions.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -3475,13 +3475,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Audio Source Select_Audio Source Select List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Audio Source Select_Audio Source Select List.ced
 Hint=Audio Source Select List (Smart Object ID=40)
 Code=16
 SGControlType=Dynamic Button List Horizontal
 SGControlName=Audio Source Select List
 GUID=B6F4CA8B-A8BA-4349-B9B6-F4CF7D179BC0
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Audio Source Select_Audio Source Select List.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Audio Source Select_Audio Source Select List.ced
 SMWRev=4.02.20
 Expand=expand_random
 HelpID=10111
@@ -3772,7 +3772,7 @@ Sgn=0
 [
 ObjTp=CED
 H=16
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Audio Source Select_Audio Source Select List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Audio Source Select_Audio Source Select List.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -3780,13 +3780,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Room Select_Room Select List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Room Select_Room Select List.ced
 Hint=Room Select List (Smart Object ID=6)
 Code=17
 SGControlType=Dynamic Button List Vertical
 SGControlName=Room Select List
 GUID=123B0A38-6C95-448F-9073-627946ACE04E
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Popup - Room Select_Room Select List.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Popup - Room Select_Room Select List.ced
 SMWRev=4.02.20
 Expand=expand_random
 HelpID=10112
@@ -4509,7 +4509,7 @@ Sgn=0
 [
 ObjTp=CED
 H=17
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Room Select_Room Select List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Room Select_Room Select List.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -4517,13 +4517,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Configs_Config Status.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Configs_Config Status.ced
 Hint=Config Status (Smart Object ID=34)
 Code=18
 SGControlType=Subpage Reference List Horizontal
 SGControlName=Config Status
 GUID=30B1DFAC-7DA0-4A6C-98AD-73C64CCC0F8C
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Configs_Config Status.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Configs_Config Status.ced
 SMWRev=4.02.20
 Expand=expand_random
 HelpID=10124
@@ -4930,7 +4930,7 @@ Sgn=0
 [
 ObjTp=CED
 H=18
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Configs_Config Status.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Configs_Config Status.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -4938,13 +4938,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Lights_SRL - Lighting Zones.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Lights_SRL - Lighting Zones.ced
 Hint=SRL - Lighting Zones (Smart Object ID=3)
 Code=19
 SGControlType=Subpage Reference List Horizontal
 SGControlName=SRL - Lighting Zones
 GUID=38E62AF1-6291-4344-BC79-0960B45CA21A
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Lights_SRL - Lighting Zones.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Lights_SRL - Lighting Zones.ced
 SMWRev=4.02.20
 Expand=expand_random
 HelpID=10124
@@ -8235,7 +8235,7 @@ Sgn=0
 [
 ObjTp=CED
 H=19
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Lights_SRL - Lighting Zones.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Lights_SRL - Lighting Zones.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -8243,13 +8243,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Lights_Presets List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Lights_Presets List.ced
 Hint=Presets List (Smart Object ID=41)
 Code=20
 SGControlType=Dynamic Button List Vertical
 SGControlName=Presets List
 GUID=BC693288-4E3D-4453-9D58-4CDBC825F4E3
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Lights_Presets List.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Lights_Presets List.ced
 SMWRev=4.02.20
 Expand=expand_random
 HelpID=10112
@@ -8732,7 +8732,7 @@ Sgn=0
 [
 ObjTp=CED
 H=20
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Lights_Presets List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Lights_Presets List.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
@@ -8740,13 +8740,13 @@ CedVer=1
 ;================================================================================
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Room Select-Lighting_Room Select.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Room Select-Lighting_Room Select.ced
 Hint=Room Select (Smart Object ID=4)
 Code=21
 SGControlType=Dynamic Button List Vertical
 SGControlName=Room Select
 GUID=D83CFC87-A322-409E-9CBB-C5001CC85440
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Popup - Room Select-Lighting_Room Select.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Popup - Room Select-Lighting_Room Select.ced
 SMWRev=4.02.20
 Expand=expand_random
 HelpID=10112
@@ -10429,7 +10429,7 @@ Sgn=0
 [
 ObjTp=CED
 H=21
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Room Select-Lighting_Room Select.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Room Select-Lighting_Room Select.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1

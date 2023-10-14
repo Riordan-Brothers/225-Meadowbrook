@@ -8,13 +8,13 @@ VTProeVer=6.2.02
 ]
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Source - Media Player_Media Player Application.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Source - Media Player_Media Player Application.ced
 Hint=Media Player Application (Smart Object ID=2)
 Code=1
 SGControlType=Media Player Application
 SGControlName=Media Player Application
 GUID=7227FA57-96B5-44C2-AA2E-5C47035EE72E
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Source - Media Player_Media Player Application.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Source - Media Player_Media Player Application.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10040
@@ -81,7 +81,7 @@ Sgn=0
 [
 ObjTp=CED
 H=1
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Source - Media Player_Media Player Application.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Source - Media Player_Media Player Application.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1

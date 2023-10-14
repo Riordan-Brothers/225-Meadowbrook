@@ -8,13 +8,13 @@ VTProeVer=6.2.02
 ]
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Schedule_Scheduler Events List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Schedule_Scheduler Events List.ced
 Hint=Scheduler Events List (Smart Object ID=28)
 Code=12
 SGControlType=Dynamic Button List Vertical
 SGControlName=Scheduler Events List
 GUID=840EBB58-73CE-4CE2-BA2B-EA978138BD76
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Schedule_Scheduler Events List.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Schedule_Scheduler Events List.ced
 SMWRev=4.02.20
 Expand=expand_random
 HelpID=10112
@@ -1457,7 +1457,7 @@ Sgn=0
 [
 ObjTp=CED
 H=12
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Schedule_Scheduler Events List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Schedule_Scheduler Events List.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1

@@ -8,13 +8,13 @@ VTProeVer=6.2.02
 ]
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT return.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT return.ced
 Hint=TSTAT return (Smart Object ID=23)
 Code=9
 SGControlType=Vertical Tab Button
 SGControlName=TSTAT return
 GUID=334803D8-C93A-488F-9CF6-7CEEAADD192E
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT return.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT return.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10074
@@ -73,7 +73,7 @@ Sgn=0
 [
 ObjTp=CED
 H=9
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Climate Schedule_TSTAT return.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Climate Schedule_TSTAT return.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1

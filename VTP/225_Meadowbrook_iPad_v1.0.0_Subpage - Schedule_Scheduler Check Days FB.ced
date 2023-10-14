@@ -8,13 +8,13 @@ VTProeVer=6.2.02
 ]
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Schedule_Scheduler Check Days FB.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Schedule_Scheduler Check Days FB.ced
 Hint=Scheduler Check Days FB (Smart Object ID=30)
 Code=13
 SGControlType=Checkbox List Vertical
 SGControlName=Scheduler Check Days FB
 GUID=BD40BDE1-DBF7-4732-8671-47034B354E78
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Schedule_Scheduler Check Days FB.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Schedule_Scheduler Check Days FB.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10011
@@ -137,7 +137,7 @@ Sgn=0
 [
 ObjTp=CED
 H=13
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Schedule_Scheduler Check Days FB.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Schedule_Scheduler Check Days FB.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1

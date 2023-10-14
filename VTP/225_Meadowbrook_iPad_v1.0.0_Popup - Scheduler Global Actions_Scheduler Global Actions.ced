@@ -8,13 +8,13 @@ VTProeVer=6.2.02
 ]
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Scheduler Global Actions_Scheduler Global Actions.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Scheduler Global Actions_Scheduler Global Actions.ced
 Hint=Scheduler Global Actions (Smart Object ID=32)
 Code=15
 SGControlType=Checkbox List Vertical
 SGControlName=Scheduler Global Actions
 GUID=98F6C08F-8AC6-4247-9C44-5F7447F15A61
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Popup - Scheduler Global Actions_Scheduler Global Actions.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Popup - Scheduler Global Actions_Scheduler Global Actions.ced
 SMWRev=4.02.19
 Expand=expand_random
 HelpID=10011
@@ -481,7 +481,7 @@ Sgn=0
 [
 ObjTp=CED
 H=15
-Name=225_Meadowbrook_iPad_v1.0.0_Popup - Scheduler Global Actions_Scheduler Global Actions.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Popup - Scheduler Global Actions_Scheduler Global Actions.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1

@@ -8,13 +8,13 @@ VTProeVer=6.2.02
 ]
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Lights_Presets List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Lights_Presets List.ced
 Hint=Presets List (Smart Object ID=41)
 Code=20
 SGControlType=Dynamic Button List Vertical
 SGControlName=Presets List
 GUID=BC693288-4E3D-4453-9D58-4CDBC825F4E3
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Lights_Presets List.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Lights_Presets List.ced
 SMWRev=4.02.20
 Expand=expand_random
 HelpID=10112
@@ -497,7 +497,7 @@ Sgn=0
 [
 ObjTp=CED
 H=20
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Lights_Presets List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Lights_Presets List.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1

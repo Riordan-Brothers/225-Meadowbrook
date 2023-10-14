@@ -8,13 +8,13 @@ VTProeVer=6.2.02
 ]
 [
 ObjTp=Symbol
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Video Source Select_Video Source Select List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Video Source Select_Video Source Select List.ced
 Hint=Video Source Select List (Smart Object ID=11)
 Code=2
 SGControlType=Dynamic Button List Horizontal
 SGControlName=Video Source Select List
 GUID=60CBA4A6-EADF-4E05-9446-61A555D9279E
-SmplCName=225_Meadowbrook_iPad_v1.0.0_Subpage - Video Source Select_Video Source Select List.ced
+SmplCName=225_Meadowbrook_ipad_v1.0.0_Subpage - Video Source Select_Video Source Select List.ced
 SMWRev=4.02.20
 Expand=expand_random
 HelpID=10111
@@ -425,7 +425,7 @@ Sgn=0
 [
 ObjTp=CED
 H=2
-Name=225_Meadowbrook_iPad_v1.0.0_Subpage - Video Source Select_Video Source Select List.ced
+Name=225_Meadowbrook_ipad_v1.0.0_Subpage - Video Source Select_Video Source Select List.ced
 ;Cedver is the version of the Smart Graphics control, not the CED file format.
 ;If the control definition changes, increment this.
 CedVer=1
