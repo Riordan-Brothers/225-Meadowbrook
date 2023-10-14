@@ -1,0 +1,41 @@
+<Device Model="CP4N">
+   <Network Type="Cresnet" Id="01">
+      <Device Model="DIN-THSTAT" DeviceId="10" Name="zone1 (Living)"/>
+      <Device Model="DIN-THSTAT" DeviceId="11" Name="zone2 (Master Bed)"/>
+      <Device Model="DIN-THSTAT" DeviceId="12" Name="zone3 (M.Bath)"/>
+      <Device Model="DIN-THSTAT" DeviceId="13" Name="zone4 (Porch)"/>
+      <Device Model="DIN-THSTAT" DeviceId="14" Name="zone5 (Garage/Pantry)"/>
+      <Device Model="DIN-THSTAT" DeviceId="15" Name="zone6 (Loft)"/>
+      <Device Model="DIN-THSTAT" DeviceId="16" Name="zone7 (Bed 2)"/>
+      <Device Model="DIN-THSTAT" DeviceId="17" Name="zone8 (Bed 3)"/>
+      <Device Model="DIN-THSTAT" DeviceId="18" Name="zone9 (Bed 4)"/>
+      <Device Model="DIN-THSTAT" DeviceId="19" Name="zone10 (Library)"/>
+      <Device Model="DIN-THSTAT" DeviceId="1A" Name="zone11 (Basement Hall/Bath)"/>
+   </Network>
+   <Network Type="Ethernet" Id="02">
+      <Device Model="TSW-1070" DeviceId="11" Name="tsw01 (.55)"/>
+      <Device Model="TSR-310" DeviceId="12" Name="bed_01"/>
+      <Device Model="TSR-310" DeviceId="13" Name="bed_02"/>
+      <Device Model="TSR-310" DeviceId="14" Name="bed_03"/>
+      <Device Model="TSR-310" DeviceId="15" Name="bed_04"/>
+      <Device Model="TSR-310" DeviceId="16" Name="living"/>
+      <Device Model="Crestron_App" DeviceId="70" Name="ipad01"/>
+      <Device Model="Crestron_App" DeviceId="71" Name="iphone01"/>
+      <Device Model="DM-NVX-E30C" DeviceId="A0" Name="appletv_01"/>
+      <Device Model="DM-NVX-E30C" DeviceId="A1" Name="appletv_02"/>
+      <Device Model="DM-NVX-E30C" DeviceId="A2" Name="appletv_03"/>
+      <Device Model="DM-NVX-E30C" DeviceId="A3" Name="appletv_04"/>
+      <Device Model="DM-NVX-E30C" DeviceId="A4" Name="appletv_05"/>
+      <Device Model="DM-NVX-E30C" DeviceId="A5" Name="appletv_06"/>
+      <Device Model="DM-NVX-E30C" DeviceId="A6" Name="camera_NVR"/>
+      <Device Model="DM-NVX-D30C" DeviceId="A7" Name="Library AVR"/>
+      <Device Model="DM-NVX-E30C" DeviceId="A8" Name="belgium_tv"/>
+      <Device Model="DM-NVX-D30" DeviceId="B0" Name="library"/>
+      <Device Model="DM-NVX-D30" DeviceId="B1" Name="living"/>
+      <Device Model="DM-NVX-D30" DeviceId="B2" Name="bed_01"/>
+      <Device Model="DM-NVX-D30" DeviceId="B3" Name="bed_02"/>
+      <Device Model="DM-NVX-D30" DeviceId="B4" Name="bed_03"/>
+      <Device Model="DM-NVX-D30" DeviceId="B5" Name="bed_04"/>
+      <Device Model="DM-NAX-8ZSA" DeviceId="BB"/>
+   </Network>
+</Device>

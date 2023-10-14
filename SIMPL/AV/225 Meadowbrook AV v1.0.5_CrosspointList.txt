@@ -1,0 +1,77 @@
+Crosspoint listing for C:\Github\225-Meadowbrook\SIMPL\AV\225 Meadowbrook AV v1.0.5.SMW
+
+Note:  Crosspoint symbols with EquipID or ControlID set to 0d are not routeable.
+
+Equipment Crosspoint Routing.                                                                       EquipID
+===========================================================================================================
+S-5.1.1.6.1                                                                                         1
+S-5.1.2.6.1                                                                                         2
+S-5.1.3.6.1                                                                                         3
+S-5.1.4.6.1                                                                                         4
+S-5.1.5.6.1                                                                                         5
+S-5.1.6.6.1                                                                                         6
+S-5.1.7.6.1                                                                                         7
+S-6.1.1                                                                                             1281
+S-6.2.1                                                                                             1282
+S-6.3.1                                                                                             1283
+S-6.4.1                                                                                             1284
+S-6.10.1                                                                                            1285
+S-6.5.1                                                                                             1286
+S-6.6.1                                                                                             1287
+S-6.7.1                                                                                             1288
+S-6.8.1                                                                                             1289
+S-6.9.1                                                                                             1296
+S-6.11.1                                                                                            1297
+S-5.2.1.1                                                                                           8193
+S-5.2.2.1                                                                                           8194
+S-5.2.3.1                                                                                           8195
+S-5.2.4.1                                                                                           8196
+S-5.2.5.1                                                                                           8197
+S-5.2.6.1                                                                                           8198
+S-5.2.7.1                                                                                           8199
+S-5.2.8.2.2                                                                                         8200
+S-5.2.8.3.2                                                                                         8201
+S-7.19.10 in macro S-6.1.2 (Module File C:\Program Files (x86)\Crestron\Cresdb\Modules\chv          10001
+thstat_sked_v4_0.cmc)                                                                               
+S-7.19.10 in macro S-6.2.2 (Module File C:\Program Files (x86)\Crestron\Cresdb\Modules\chv          10002
+thstat_sked_v4_0.cmc)                                                                               
+S-7.19.10 in macro S-6.3.2 (Module File C:\Program Files (x86)\Crestron\Cresdb\Modules\chv          10003
+thstat_sked_v4_0.cmc)                                                                               
+S-7.19.10 in macro S-6.4.2 (Module File C:\Program Files (x86)\Crestron\Cresdb\Modules\chv          10004
+thstat_sked_v4_0.cmc)                                                                               
+S-7.19.10 in macro S-6.10.2 (Module File C:\Program Files (x86)\Crestron\Cresdb\Modules\ch          10005
+vthstat_sked_v4_0.cmc)                                                                              
+S-7.19.10 in macro S-6.5.2 (Module File C:\Program Files (x86)\Crestron\Cresdb\Modules\chv          10006
+thstat_sked_v4_0.cmc)                                                                               
+S-7.19.10 in macro S-6.6.2 (Module File C:\Program Files (x86)\Crestron\Cresdb\Modules\chv          10007
+thstat_sked_v4_0.cmc)                                                                               
+S-7.19.10 in macro S-6.7.2 (Module File C:\Program Files (x86)\Crestron\Cresdb\Modules\chv          10008
+thstat_sked_v4_0.cmc)                                                                               
+S-7.19.10 in macro S-6.8.2 (Module File C:\Program Files (x86)\Crestron\Cresdb\Modules\chv          10009
+thstat_sked_v4_0.cmc)                                                                               
+S-7.19.10 in macro S-6.9.2 (Module File C:\Program Files (x86)\Crestron\Cresdb\Modules\chv          10010
+thstat_sked_v4_0.cmc)                                                                               
+S-7.19.10 in macro S-6.11.2 (Module File C:\Program Files (x86)\Crestron\Cresdb\Modules\ch          10011
+vthstat_sked_v4_0.cmc)                                                                              
+
+Control Crosspoint Routing.                                                                         ControlID
+=============================================================================================================
+S-5.1.1.7.1                                                                                         81
+S-5.1.2.7.1                                                                                         82
+S-5.1.3.7.1                                                                                         83
+S-5.1.4.7.1                                                                                         84
+S-5.1.5.7.1                                                                                         85
+S-5.1.6.7.1                                                                                         86
+S-5.1.7.7.1                                                                                         87
+S-4.3.1.1.2                                                                                         257
+S-4.5.1.1.2                                                                                         264
+S-4.6.1.1.2                                                                                         265
+S-4.7.1.1.2                                                                                         272
+S-4.8.1.1.2                                                                                         273
+S-4.9.1.1.2                                                                                         274
+S-4.4.1.1.2                                                                                         513
+S-4.10.1.1.2                                                                                        514
+S-4.3.1.2.6                                                                                         4097
+S-4.4.1.2.6                                                                                         8193
+S-4.10.1.2.6                                                                                        8194
+
